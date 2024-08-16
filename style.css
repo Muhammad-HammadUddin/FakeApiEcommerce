@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html,body{
+    height: 100%;
+    color: black !important;
+}
+
+
+.card-pics{
+    margin-top:10px;
+    
+}
+
+
+
+.card img{
+    height: 300px;
+    
+}
+.card a{
+    margin-top: 10px;
+}
+
+  
+
+.man-clothing,.women-clothing {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap onto new lines if they don't fit */
+    justify-content: space-between; /* Centers the cards horizontally */
+    gap: 10px; /* Space between the cards */
+    margin-top: 30px;
+    padding: 0 10px; /* Adds padding on the sides to prevent cards from touching screen edges */
+}
+
+.card {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body{
+    overflow-x: hidden;
+}
+.banner{
+    width: 100vw;
+    height: 80vh;
+    background-image: url('handsome-tourist-sunglasses-straw-hat-looking-aside-smiling-pleased-exploring-sighsteeing.jpg');
+    background-position: cover;
+    background-size: cover;
+    min-width: 450px;
+    position: relative;
+}
+.content{
+    padding: 10px;
+    width: 50vw;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    
+    left: 50%;
+
+}
+.content h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.content p{
+    font-size: 22px;
+    font-family: sans-serif;
+    
+
+}
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .content{
+        display: none;
+    }
+    .man-clothing {
+        justify-content: center; /* Ensures the cards are centered */
+        align-items: center; /* Aligns items vertically in the center */
+    }
+
+    .card {
+        margin: auto; /* Ensures cards don't exceed their max width */
+    }
+    .banner{
+        width: 100vw;
+        background-position: cover;
+        background-size: cover;
+
+    }
+}
+
